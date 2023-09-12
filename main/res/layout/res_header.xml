@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:app="http://schemas.android.com/apk/res-auto"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="5dp"
+                  android:orientation="vertical"
+    >
+        <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content"
+                      android:gravity="center"
+                      android:layout_height="wrap_content"
+                      android:text="Restaurant Details"
+                      android:textSize="20dp"
+                      android:textStyle="bold"
+                      android:textColor="@color/colorPrimaryText"
+                      android:layout_marginBottom="8dp"
+                      app:layout_constraintBottom_toBottomOf="parent"
+                      android:layout_marginTop="8dp"
+                      app:layout_constraintTop_toTopOf="parent"
+                      app:layout_constraintStart_toStartOf="parent"
+                      android:layout_marginStart="8dp"/>
+            <android.support.v7.widget.CardView
+                    android:layout_width="40dp"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginTop="8dp"
+                    app:cardCornerRadius="5dp"
+                    android:elevation="7dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0"
+                    android:layout_height="36dp">
+
+
+            <TextView
+                    android:text="4.0"
+                    android:layout_width="40dp"
+                    android:gravity="center"
+                    android:layout_height="36dp"
+                    android:textColor="@color/quantum_white_text"
+                    android:elevation="5dp"
+                    android:textStyle="bold"
+                    android:transitionName="ratingTransition"
+
+                    android:textSize="20dp"
+                    android:id="@+id/tvRating2"
+                    />
+            </android.support.v7.widget.CardView>
+        </android.support.constraint.ConstraintLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+            <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/food_blue"
+            />
+            <TextView android:layout_width="match_parent"
+                      android:id="@+id/tvCousine3"
+                      android:textSize="15dp"
+                      android:textStyle="bold"
+                      android:textColor="@color/colorPrimaryText"
+                      android:layout_height="wrap_content"
+            />
+
+        </LinearLayout>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="@color/quantum_black_secondary_text"/>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+            <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/location_blue"
+            />
+            <TextView android:layout_width="match_parent"
+                      android:textColor="@color/colorPrimaryText"
+                      android:id="@+id/tvAddress3"
+                      android:textSize="15dp"
+                      android:textStyle="bold"
+                      android:layout_height="wrap_content"
+            />
+
+        </LinearLayout>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="@color/quantum_black_secondary_text"/>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+            <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/ic_phone_in_talk_black_24dp"
+            />
+            <TextView android:layout_width="match_parent"
+                      android:text=""
+                      android:gravity="center_vertical"
+                      android:id="@+id/tvPhNumber3"
+                      android:textSize="15dp"
+                      android:textStyle="bold"
+                      android:textColor="@color/colorPrimaryText"
+                      android:layout_height="wrap_content"
+            />
+
+        </LinearLayout>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="@color/quantum_black_secondary_text"/>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+            <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/time_blue"
+            />
+            <TextView android:layout_width="match_parent"
+                      android:gravity="center_vertical"
+                      android:text="Avg Serve time 20-30min"
+                      android:textSize="15dp"
+                      android:textStyle="bold"
+                      android:textColor="@color/colorPrimaryText"
+                      android:id="@+id/tvServeTime3"
+                      android:layout_height="wrap_content"
+            />
+
+        </LinearLayout>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="@color/quantum_black_secondary_text"/>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+            <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/clock_blue"
+            />
+            <TextView android:layout_width="match_parent"
+                      android:gravity="center_vertical"
+                      android:text="open 10am-9pm"
+                      android:textSize="15dp"
+                      android:textStyle="bold"
+                      android:id="@+id/tvOpenTime3"
+                      android:textColor="@color/colorPrimaryText"
+                      android:layout_height="wrap_content"
+            />
+        </LinearLayout>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="@color/quantum_black_secondary_text"/>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+            <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/rupee_blue"
+            />
+            <TextView android:layout_width="match_parent"
+                      android:gravity="center_vertical"
+                      android:textColor="@color/colorPrimaryText"
+                      android:id="@+id/tvRate3"
+                      android:textSize="15dp"
+                      android:textStyle="bold"
+                      android:layout_height="wrap_content"
+            />
+        </LinearLayout>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="@color/quantum_black_secondary_text"/>
+        <TextView android:layout_width="match_parent"
+                  android:textStyle="bold"
+                  android:layout_height="30dp"
+                  android:gravity="center"
+                  android:layout_marginHorizontal="10dp"
+                  android:textSize="20dp"
+                  android:background="@color/colorPrimaryLight"
+                  android:textColor="@color/colorPrimaryText"
+                  android:text="Menu"/>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="@color/quantum_black_secondary_text"/>
+    </LinearLayout>

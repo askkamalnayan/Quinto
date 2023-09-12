@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:background="@color/quantum_white_100"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        tools:context=".LocationAndMap">
+    <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:tools="http://schemas.android.com/tools"
+                  android:id="@+id/map"
+                  android:name="com.google.android.gms.maps.SupportMapFragment"
+                  android:layout_width="match_parent"
+                  android:layout_height="450dp"
+                  tools:context="com.example.currentplacedetailsonmap.MapsActivityCurrentPlace"/>
+    </android.support.v7.widget.CardView>
+    <TextView
+            android:text="Set Your Location"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="7dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimaryText"
+            android:layout_height="wrap_content" android:id="@+id/textView"/>
+    <TextView android:layout_width="match_parent"
+              android:id="@+id/tVLocation"
+              android:text="Your Location"
+              android:background="@drawable/nav_bar_shadow"
+              android:layout_margin="10dp"
+              android:elevation="1dp"
+              android:padding="2dp"
+              android:textColor="@color/places_autocomplete_prediction_secondary_text"
+              android:layout_gravity="center"
+              android:maxLines="1"
+              android:gravity="center"
+              android:layout_height="wrap_content"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+                android:layout_width="match_parent"
+                android:text="CONFIRM LOCATION"
+                android:background="@color/colorSecondary"
+                android:textColor="@color/quantum_white_text"
+                android:textStyle="bold"
+                android:onClick="bLocationSetter"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+        />
+    </LinearLayout>
+</android.support.v7.widget.LinearLayoutCompat>

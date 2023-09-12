@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:shimmer="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Home_Fragment">
+    <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            shimmer:duration="800"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relLayout1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.0">
+
+        <!-- Adding 7 rows of placeholders -->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" android:id="@+id/linearLayout">
+            <include layout="@layout/data_placeholder_layout"/>
+            <include layout="@layout/data_placeholder_layout"/>
+            <include layout="@layout/data_placeholder_layout"/>
+            <include layout="@layout/data_placeholder_layout"/>
+            <include layout="@layout/data_placeholder_layout"/>
+            <include layout="@layout/data_placeholder_layout"/>
+            <include layout="@layout/data_placeholder_layout"/>
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/rest_recycler"
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/relLayout1"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintHorizontal_bias="0.0"
+
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+    <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            app:srcCompat="@drawable/ic_filter2"
+            android:elevation="10dp"
+            app:fabSize="auto"
+            app:elevation="6dp"
+            android:backgroundTint="@color/colorSecondary"
+            app:pressedTranslationZ="12dp"
+            android:tint="@color/icons"
+            app:rippleColor="@color/divider"
+            android:id="@+id/filter"
+            android:clickable="true"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="76dp"/>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginHorizontal="7dp"
+            android:elevation="5dp"
+            android:background="@drawable/white_border"
+            android:id="@+id/relLayout1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+    >
+        <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/ic_magnify"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_search" android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ic_magnify"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimaryText"
+                android:id="@+id/placeName"
+                android:background="@null"
+                android:layout_marginStart="15dp"
+                android:hint="Enter Address, City or Zip Code"
+                android:imeOptions="actionSearch"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="-1dp"
+                android:layout_toEndOf="@+id/ic_magnify"
+                android:layout_marginTop="15dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"/>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

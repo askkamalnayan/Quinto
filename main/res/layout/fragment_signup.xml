@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SignupFragment"
+        android:background="@color/color_sign_up">
+    <android.support.constraint.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="4dp"/>
+
+    <android.support.design.widget.TextInputLayout
+            android:id="@+id/email_input1"
+            style="@style/Widget.TextInputLayout"
+            android:layout_marginTop="48dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline" >
+
+        <android.support.design.widget.TextInputEditText
+                android:id="@+id/email_input_edit1"
+                style="@style/Widget.TextEdit"
+                android:hint="@string/email_hint"
+                android:inputType="textEmailAddress" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+            android:id="@+id/password_input1"
+            style="@style/Widget.TextInputLayout"
+            android:layout_marginTop="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/email_input1"
+            app:passwordToggleTint="@color/color_input_hint">
+
+        <android.support.design.widget.TextInputEditText
+                android:id="@+id/password_input_edit1"
+                style="@style/Widget.TextEdit"
+                android:hint="@string/password_hint"
+                android:inputType="textPassword" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+            android:id="@+id/confirm_password1"
+            style="@style/Widget.TextInputLayout"
+            android:layout_marginTop="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password_input1"
+            app:passwordToggleTint="@color/color_input_hint">
+
+        <android.support.design.widget.TextInputEditText
+                android:id="@+id/confirm_password_edit1"
+                style="@style/Widget.TextEdit"
+                android:hint="@string/confirm_hint"
+                android:inputType="textPassword" />
+    </android.support.design.widget.TextInputLayout>
+    <TextView
+            android:id="@+id/caption1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/sign_up_label"
+            android:textAllCaps="true"
+            android:textColor="@color/color_label"
+            android:textSize="@dimen/unfolded_size"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:paddingHorizontal="5dp"
+            android:background="@drawable/white_button_border"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/confirm_password1"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintVertical_bias="0.026"/>
+    <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_arrow_right_black_24dp"
+            android:layout_above="@id/swipeRight"
+            android:layout_centerHorizontal="true" android:id="@+id/swiperighticon"
+            app:layout_constraintEnd_toEndOf="@+id/caption1"
+            app:layout_constraintStart_toStartOf="@+id/caption1"
+            app:layout_constraintBottom_toTopOf="@+id/swipeRight" android:layout_marginBottom="8dp"/>
+
+    <TextView
+            android:id="@+id/swipeRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Swipe Right To Login"
+            android:textColor="#FFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/swiperighticon"
+            app:layout_constraintEnd_toEndOf="@+id/swiperighticon"
+            app:layout_constraintHorizontal_bias="0.496" android:layout_marginBottom="52dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+</android.support.constraint.ConstraintLayout>

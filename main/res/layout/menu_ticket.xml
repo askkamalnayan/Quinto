@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="@color/quantum_white_100"
+        android:layout_margin="5dp"
+        android:elevation="5dp"
+        android:layout_height="wrap_content">
+    <LinearLayout
+
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@color/quantum_white_100"
+            android:layout_height="wrap_content">
+    <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/tVMenuName"
+            android:text="Sweets"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/quantum_black_text"
+            android:layout_marginLeft="5dp"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"/>
+    <View
+            android:layout_width="match_parent"
+            android:background="@color/quantum_black_secondary_text"
+            android:layout_marginHorizontal="7dp"
+            android:layout_height="1dp"/>
+<android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/rv_child"
+        android:layout_height="match_parent">
+</android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

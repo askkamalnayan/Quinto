@@ -1,0 +1,22 @@
+<resources>
+    <string name="google_map_api">AIzaSyDdE8peJfKH2nnOBp3bGkWi0sPZxz2rRg8</string>
+    <string name="app_name">Qunto</string>
+    <string name="title_activity_navigation">navigation</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="Rs">\u20B9</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="sign_up_label">Sign Up</string>
+    <string name="log_in_label">Log In</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="password_hint">Password</string>
+    <string name="email_hint">Email</string>
+    <string name="confirm_hint">Confirm Password</string>
+    <string name="facebook_app_id">844409689275313</string>
+    <string name="fb_login_protocol_scheme">fb844409689275313</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

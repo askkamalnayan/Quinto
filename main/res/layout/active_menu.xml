@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:background="@color/quantum_white_100"
+android:layout_marginBottom="5dp"
+android:layout_height="wrap_content">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="horizontal"
+                      android:gravity="left|center"
+                      android:background="@color/quantum_white_100"
+                      android:layout_height="wrap_content">
+            <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="start|center"
+                    app:srcCompat="@drawable/nonveg"
+                    android:id="@+id/ivVeg"
+                    android:layout_weight="1"/>
+
+            <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tVMenuItem"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:textColor="@color/quantum_black_text"
+                    android:layout_weight="10"/>
+             <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_marginEnd="15dp"
+                  android:background="@drawable/nav_bar_shadow"
+                  android:layout_height="wrap_content">
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:text="-"
+                    android:id="@+id/tvMinus"
+                    android:textColor="@color/quantum_black_text"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="10dp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:layout_width="40dp"
+                    android:text="Add"
+                    android:gravity="center"
+                    android:id="@+id/tvAdd"
+                    android:textColor="@color/quantum_black_text"
+                    android:textStyle="bold"
+                    android:paddingHorizontal="1dp"
+                    android:paddingVertical="5dp"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:text="+"
+                    android:id="@+id/tvPlus"
+                    android:textColor="@color/quantum_black_text"
+                    android:textStyle="bold"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp"
+                    android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="horizontal"
+                      android:gravity="left|center"
+                      android:background="@color/quantum_white_100"
+                      android:paddingBottom="10dp"
+                      android:layout_height="wrap_content">
+            <ImageView android:layout_width="15dp"
+                       android:layout_height="15dp"
+                       android:layout_marginStart="40dp"
+                       android:layout_gravity="start|center"
+                       app:srcCompat="@drawable/rupee_blue"
+                       android:id="@+id/ivrupee"
+                       android:layout_weight="1"/>
+            <TextView android:layout_width="wrap_content"
+                      android:id="@+id/tVMenuItemPrice"
+                      android:textSize="15dp"
+                      android:text="cost of item"
+                      android:layout_weight="101"
+                      android:textColor="@color/quantum_black_text"
+                      android:layout_height="wrap_content"
+                      />
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

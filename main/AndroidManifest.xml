@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.kamalnayan.qunto">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.hardware.camera"/>
+    <uses-permission android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+            android:allowBackup="true"
+            android:icon="@drawable/app_logo1"
+            android:label="@string/app_name"
+            android:roundIcon="@drawable/app_logo1"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity android:name=".ServeTime"
+                  android:screenOrientation="portrait"
+        >
+        </activity>
+        <activity android:name=".FoodCart"
+                  android:screenOrientation="portrait"
+        >
+        </activity>
+        <activity
+                android:name=".Login"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme2">
+        </activity>
+        <activity
+                android:name=".RestaurantProfile"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme2">
+        </activity>
+        <activity
+                android:name=".LocationAndMap"
+                android:theme="@style/AppTheme2"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".LocationSeter"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".Home"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".MainActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <meta-data
+                android:name="com.google.android.geo.API_KEY"
+                android:value="AIzaSyDdE8peJfKH2nnOBp3bGkWi0sPZxz2rRg8"/>
+        <meta-data
+                android:name="preloaded_fonts"
+                android:resource="@array/preloaded_fonts"/>
+    </application>
+
+</manifest>
